@@ -236,7 +236,7 @@ a{
 .card {
     width: 350px;
     height: max-content;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 }
