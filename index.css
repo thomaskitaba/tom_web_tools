@@ -163,8 +163,6 @@ a{
     background: yellow;
 }
 
-
-
 .burger_highlight {
     border: solid 8px green;
     background-color: yellow;
@@ -201,9 +199,7 @@ a{
     align-items: flex-start;
     padding: 10px;
 }
-.nav_button {
 
-}
 
 .nav_button {
     height: 20px;
