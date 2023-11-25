@@ -1,4 +1,15 @@
+function handleWindowResize(){
+    var windowsWidth = $(window).width();
+    if (windowWidth > 769)
+    {
+        $(".nav_bar").css('display', 'flex');
+    }
+}
+// Event listener for window resize using jQuery
+$(window).resize(handleWindowResize);
+
 $(document).ready(function () {
+    handleWindowResize();
     let clickStatus = 0;
     var windowWidth = $(window).width();
     // toggle ".nav_bar' between display flex and none
