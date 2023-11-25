@@ -217,7 +217,7 @@ a{
     justify-content: flex-start;
     padding-left: 10px;
     border: solid 2px rgb(95, 95, 96);
-    background-color: red;
+    /* background-color: red; */
 
 }
 .nav_button:hover{
