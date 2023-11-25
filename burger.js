@@ -13,11 +13,17 @@ $(document).ready(function () {
           clickStatus = 0;
         }
       });
+      $(document).click(function (e) {
+        if (!$(e.target).closest('.nav_bar').length && !$(e.target).closest('.burger').length) {
+          // If the clicked element is neither .nav_bar nor .burger, hide .nav_bar
+          $('.nav_bar').css('display', 'none');
+          clickStatus = 0;
+        }
+      });
     // add hover effect to the burger menu itself
     $('.burger').hover(function(){
         $(".burger").addClass("burger_highlight");
     }, function(){$(".burger").removeClass("burger_highlight");
         $(".nav_bard").css("display", "none");
     });
-
   });
