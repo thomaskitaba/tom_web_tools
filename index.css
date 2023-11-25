@@ -16,6 +16,9 @@ html, body {
 }
 h3 {
     color: red;
+    text-align: center;
+    border-bottom: solid 2px #3366CC;
+    padding: 10px;
 }
 /* Default link color */
 a:link {
@@ -232,7 +235,8 @@ a{
 }
 .card {
     width: 350px;
-    height: 350px;
+    height: max-content;
+    padding-bottom: 30px;
 }
 
 }
