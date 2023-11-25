@@ -4,6 +4,31 @@
   box-sizing: border-box;
   margin: 0px;
 }
+body {
+    color: rgb(255, 255, 255);
+}
+h3 {
+    color: red;
+}
+/* Default link color */
+a:link {
+    color: #c5c5f3; /* Change this to the desired default color */
+  }
+
+  /* Visited link color */
+  a:visited {
+    color: #3366CC; /* Change this to the desired color for visited links */
+  }
+
+  /* Hover state - when the mouse pointer is over the link */
+  a:hover {
+    color: #e9a1a1; /* Change this to the desired color on hover */
+  }
+
+  /* Active state - when the link is being clicked */
+  a:active {
+    color: #00FF00; /* Change this to the desired color on active/clicked state */
+  }
 .container {
     width: 100%;
     /* margin: 10px; */
@@ -27,8 +52,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 5px;
-    border-top: solid 2px rgb(25, 0, 255);
-    border-bottom: solid 2px rgb(25, 0, 255);
+    border-top: solid 2px rgb(95, 95, 96);
+    border-bottom: solid 2px rgb(95, 95, 96);
 
 }
 
@@ -62,12 +87,14 @@
     border:1px;
     width: 130px;
     height: 50px;
-    box-shadow: 0px 1px 1px 0px rgb(211, 39, 39),  1px 0px 1px 0px rgb(211, 39, 39);
+
+    box-shadow:0px 1px 1px 0px rgb(211, 39, 39),  1px 0px 1px 0px rgb(211, 39, 39), 0px -1px 1px 0px rgb(211, 39, 39), -1px 0px 1px 0px rgb(211, 39, 39);
+    /* box-shadow:0px 1px 1px 0px rgb(211, 39, 39),  1px 0px 1px 0px rgb(211, 39, 39), 0px -1px 1px 0px rgb(211, 39, 39), -1px 0px 1px 0px rgb(211, 39, 39),  0px 2px 2px 0px white,  2px 0px 2px 0px white, 0px -2px 2px 0px white, -2px 0px 2px 0px white; */
 }
 .nav_button:hover{
     width: 145px;
     height: 55px;
-    box-shadow: 1px 1px 4 5px rgb(211, 39, 39);
+    box-shadow: 1px 1px 4px 2px rgb(211, 39, 39);
 }
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -117,9 +144,6 @@ a{
 
 }
 
-
-
-
 @media (max-width: 800px) {
 .all_navigation {
     justify-content: flex-start;
@@ -161,4 +185,5 @@ a{
     width: 400px;
     height: 400px;
 }
+
 }
