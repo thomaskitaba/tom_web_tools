@@ -22,16 +22,20 @@
      background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.flex_then_text {
+.all_navigation {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: solid 2px red; */
+
+
 }
+
 .nav_bar {
     display: flex;
-    /* background-color: #2ebf91; */
+    /* border: solid 3px yellow; */
     flex-wrap: wrap;
-    height: 100px;
+
     width: 100%;
     margin-top: 0px;
     padding-right: 10px;
@@ -39,6 +43,17 @@
     justify-content: flex-end;
     align-items: center;
 }
+.burger {
+    display: none;
+    background-color: green;
+    background-image: url();
+    border: solid 3px yellow;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+
+}
+
 .nav_button {
 
     display: flex;
@@ -47,7 +62,7 @@
     border:1px;
     width: 130px;
     height: 50px;
-    box-shadow: 0px 1px 2px 1px rgb(211, 39, 39);
+    box-shadow: 0px 1px 1px 0px rgb(211, 39, 39);
 }
 .nav_button:hover{
     width: 145px;
@@ -80,17 +95,70 @@ body {
 
     border: solid 1px blue;
     box-shadow: 1px 1px 5px 0px red, -1px -1px 5px 0px yellow;
-
 }
-
 .margin_small {
     margin-bottom: 10px;
 }
-
 a{
     text-decoration: none;
 }
 .text_white a{
     font-weight: 400;
     color: white;
+}
+
+.flex_then_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_then_wrap {
+    display: flex;
+
+}
+
+
+
+
+@media (max-width: 800px) {
+.all_navigation {
+    justify-content: flex-start;
+    position: relative;
+}
+.burger {
+    display: flex;
+}
+.burger_highlight {
+    width: 70px;
+    height: 60px;
+    background-color: yellow;
+}
+.nav_bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    background-color: rgb(82, 81, 81);
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+.nav_button {
+    height: 20px;
+    border:none;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 10px;
+
+}
+.nav_button:hover{
+    width: 100%;
+    height: 25px;
+    box-shadow: 1px 1px 1px 0px rgb(91, 39, 211);
+}
+.card {
+    width: 400px;
+    height: 400px;
+}
 }
