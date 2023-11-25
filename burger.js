@@ -23,6 +23,7 @@ $(document).ready(function () {
     // add hover effect to the burger menu itself
     $('.burger').hover(function(){
         $(".burger").addClass("burger_highlight");
+
     }, function(){$(".burger").removeClass("burger_highlight");
         $(".nav_bard").css("display", "none");
     });
