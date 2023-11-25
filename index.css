@@ -4,13 +4,15 @@
   box-sizing: border-box;
   margin: 0px;
 }
-body {
+html, body {
     color: rgb(255, 255, 255);
-    width: 100vw;
-
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
-    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 h3 {
     color: red;
@@ -151,7 +153,9 @@ a{
 }
 
 @media (max-width: 800px) {
-
+.container, body {
+    width: 100%;
+}
 .all_navigation {
     justify-content: flex-start;
     position: relative;
