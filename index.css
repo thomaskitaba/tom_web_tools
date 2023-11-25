@@ -13,10 +13,13 @@
     left: 0px;
     right: 0px;
 
-    background: #8360c3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* margin-top: 10px; */
+    /* background: #8360c3;  /* fallback for old browsers
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+     */
+     background: #000000;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #434343, #303030);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #434343, #303030); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .flex_then_text {
@@ -74,15 +77,15 @@ body {
     border-radius: 2px;
     margin: 5px;
     padding: 5px;
-    background-color: rgb(42, 75, 165);
 
-    box-shadow: 2px 0px 8px 0px red;
+    border: solid 1px blue;
+    box-shadow: 1px 1px 5px 0px red, -1px -1px 5px 0px yellow;
+
 }
 
 .margin_small {
     margin-bottom: 10px;
 }
-
 
 a{
     text-decoration: none;
