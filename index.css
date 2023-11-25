@@ -6,6 +6,11 @@
 }
 body {
     color: rgb(255, 255, 255);
+    width: 100vw;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    width: 100vw;
 }
 h3 {
     color: red;
@@ -30,7 +35,7 @@ a:link {
     color: #00FF00; /* Change this to the desired color on active/clicked state */
   }
 .container {
-    width: 100vw;
+    width: 100%;
     /* margin: 10px; */
     background-color: green;
     position: absolute;
@@ -88,19 +93,16 @@ a:link {
     border:1px;
     width: 130px;
     height: 50px;
-
-    /* box-shadow:0px 1px 1px 0px rgb(211, 39, 39),  1px 0px 1px 0px rgb(211, 39, 39), 0px -1px 1px 0px rgb(211, 39, 39), -1px 0px 1px 0px rgb(211, 39, 39); */
-    /* box-shadow:0px 1px 1px 0px rgb(211, 39, 39),  1px 0px 1px 0px rgb(211, 39, 39), 0px -1px 1px 0px rgb(211, 39, 39), -1px 0px 1px 0px rgb(211, 39, 39),  0px 2px 2px 0px white,  2px 0px 2px 0px white, 0px -2px 2px 0px white, -2px 0px 2px 0px white; */
+    border-radius: 2px;
+    /* box-shadow:0px 1px 2px 0px rgb(211, 39, 39),  1px 0px 1px 0px rgb(211, 39, 39), 0px -1px 1px 0px rgb(211, 39, 39), -1px 0px 1px 0px rgb(211, 39, 39); */
+    box-shadow:0px 1px 1px 0px rgb(211, 39, 39),  1px 0px 1px 0px rgb(211, 39, 39), 0px -1px 1px 0px rgb(211, 39, 39), -1px 0px 1px 0px rgb(211, 39, 39),  0px 2px 2px 0px white,  2px 0px 2px 0px white, 0px -2px 2px 0px white, -2px 0px 2px 0px white;
 }
 .nav_button:hover{
     width: 130px;
     height: 50px;
     box-shadow: 1px 1px 4px 2px rgb(211, 39, 39);
 }
-body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-}
+
 
 .header {
     margin: 20px;
@@ -164,14 +166,14 @@ a{
 }
 
 .burger_highlight {
-    border: solid 8px green;
+    border: solid 8px red;
     background-color: yellow;
 }
 
-.burger_highlight:hover {
+/* .burger_highlight:hover {
     border: solid 8px yellow;
     background-color: green;
-}
+} */
 .breads {
     width: 50px;
     height: 10px;
@@ -187,6 +189,10 @@ a{
     border-top: solid 8px yellow;
     border-bottom: solid 8px yellow;
     /* background-color: blue; */
+}
+.burger:hover {
+    border: solid 8px yellow;
+    background-color: green;
 }
 .nav_bar {
     display: none;
