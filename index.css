@@ -149,24 +149,42 @@ a{
 }
 
 @media (max-width: 800px) {
+
 .all_navigation {
     justify-content: flex-start;
     position: relative;
 }
 .burger {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 
 }
-.breads {
-    width: 40px;
-    height: 10px;
-    background-color: red;
-    
-}
+
 .burger_highlight {
     border: solid 8px green;
 
     background-color: yellow;
+}
+.breads {
+    /* border-top: solid 5px red; */
+    width: 40px;
+    height: 6px;
+    box-sizing: content-box;
+    border-top: solid 8px red;
+    border-bottom: solid 8px red;
+    /* background-color: blue; */
+
+}
+.breads2 {
+    /* border-top: solid 5px red; */
+    width: 40px;
+    height: 8px;
+
+    background-color: red;
+    margin-top: 6px;
 }
 .nav_bar {
     display: none;
