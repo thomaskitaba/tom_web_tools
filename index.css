@@ -214,8 +214,8 @@ a{
     align-items: flex-start;
     padding: 10px;
     border-radius: 2px;
+    /* border: solid 10px red; */
 }
-
 
 .nav_button {
     height: 20px;
