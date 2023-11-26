@@ -127,10 +127,11 @@ a:link {
     border-radius: 2px;
     margin: 5px;
     padding: 5px;
+    background-color: #303030;
     border: solid 1px blue;
     box-shadow: 1px 1px 3px 0px blue, -1px -1px 3px 0px red;
 }
-.card:hover {
+.card:hover h3{
     box-shadow: 1px 1px 3px 0px blue, -1px -1px 3px 0px blue;
     background-color: rgb(88, 88, 76);
 }
