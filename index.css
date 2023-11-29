@@ -1,3 +1,9 @@
+:root {
+    --clr-brdr-000: red;
+    --clr-brdr-100: rgb(88, 87, 87);
+
+    --clt-txt-red: red;
+}
 *,
 *::before,
 *::after {
@@ -15,7 +21,7 @@ html, body {
     height: 100%;
 }
 h3 {
-    color: red;
+    color: var(--clt-txt-red);
     text-align: center;
     border-bottom: solid 2px #3366CC;
     padding: 10px;
@@ -128,12 +134,15 @@ a:link {
     margin: 5px;
     padding: 5px;
     background-color: #303030;
-    border: solid 1px blue;
-    box-shadow: 1px 1px 3px 0px blue, -1px -1px 3px 0px red;
+    border: solid 1px var(--clr-brdr-100);
+    box-shadow: 1px 1px 1px 0px var(--clr-brdr-100), -1px -1px 1px 0px var(--clr-brdr-100);
 }
 .card:hover h3{
     box-shadow: 1px 1px 3px 0px blue, -1px -1px 3px 0px blue;
     background-color: rgb(88, 88, 76);
+}
+.card:hover {
+    box-shadow: 1px 1px 1px 0px red, -1px -1px 1px 0px red;
 }
 .margin_small {
     margin-bottom: 10px;
