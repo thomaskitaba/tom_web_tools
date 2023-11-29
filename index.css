@@ -1,6 +1,8 @@
 :root {
     --clr-brdr-000: red;
     --clr-brdr-100: rgb(88, 87, 87);
+    --clr-brdr-200: rgb(49, 48, 48);
+    --clr-brdr-800: rgb(123, 120, 120);
 
     --clt-txt-red: red;
 }
@@ -86,9 +88,9 @@ a:link {
 }
 .burger {
     display: none;
-    background-color: green;
+    background-color: var(--clr-brdr-800);
     background-image: url();
-    border: solid 3px yellow;
+    border: solid 3px var(--clr-brdr-200);
     width: 60px;
     height: 60px;
     margin: 10px;
@@ -179,8 +181,8 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 8px green;
-    background: yellow;
+    border: solid 8px var(--clr-brdr-800);
+    background: var(--clr-brdr-200);
 }
 
 .burger_highlight {
@@ -196,8 +198,8 @@ a{
     width: 50px;
     height: 10px;
     box-sizing: content-box;
-    border-top: solid 8px green;
-    border-bottom: solid 8px green;
+    border-top: solid 8px var(--clr-brdr-800);
+    border-bottom: solid 8px var(--clr-brdr-800);
 }
 .sauce {
     position: absolute;
@@ -215,13 +217,13 @@ a{
     width: 50px;
     height: 10px;
     box-sizing: content-box;
-    border-top: solid 8px yellow;
-    border-bottom: solid 8px yellow;
+    border-top: solid 8px var(--clr-brdr-200);
+    border-bottom: solid 8px var(--clr-brdr-200);
     /* background-color: blue; */
 }
 .burger:hover {
-    border: solid 8px yellow;
-    background-color: green;
+    border: solid 8px var(--clr-brdr-200);
+    background-color: var(--clr-brdr-800);
 }
 .nav_bar {
     display: none;
