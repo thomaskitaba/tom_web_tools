@@ -23,7 +23,7 @@ html, body {
 h3 {
     color: var(--clt-txt-red);
     text-align: center;
-    border-bottom: solid 2px #3366CC;
+    /* border-bottom: solid 2px #4e4e4f; */
     padding: 10px;
 }
 /* Default link color */
@@ -138,7 +138,7 @@ a:link {
     box-shadow: 1px 1px 1px 0px var(--clr-brdr-100), -1px -1px 1px 0px var(--clr-brdr-100);
 }
 .card:hover h3{
-    box-shadow: 1px 1px 3px 0px blue, -1px -1px 3px 0px blue;
+    box-shadow: 1px 1px 3px 0px var(--clr-brdr-100), -1px -1px 3px 0px var(--clr-brdr-100);
     background-color: rgb(88, 88, 76);
 }
 .card:hover {
