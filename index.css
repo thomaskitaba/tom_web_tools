@@ -144,7 +144,7 @@ a:link {
     background-color: rgb(88, 88, 76);
 }
 .card:hover {
-    box-shadow: 1px 1px 1px 0px red, -1px -1px 1px 0px red;
+    box-shadow: 1px 1px 1px 0px rgb(255, 255, 255), -1px -1px 1px 0px rgb(255, 255, 255);
 }
 .margin_small {
     margin-bottom: 10px;
@@ -186,8 +186,8 @@ a{
 }
 
 .burger_highlight {
-    border: solid 8px red;
-    background-color: yellow;
+    border: solid 8px var(--clr-brdr-200);
+    background-color: var(--clr-brdr-800);
 }
 
 /* .burger_highlight:hover {
