@@ -132,13 +132,16 @@ a:link {
 .card {
     width: 300px;
     height: 300px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     border-radius: 2px;
     margin: 5px;
     padding: 5px;
     background-color: #303030;
     border: solid 1px var(--clr-brdr-100);
     box-shadow: 1px 1px 1px 0px var(--clr-brdr-100), -1px -1px 1px 0px var(--clr-brdr-100);
+}
+.google-digital-marketing-notes {
+  background-color: rgba(5, 90, 138, 0.541);
 }
 .card:hover h3{
     box-shadow: 1px 1px 3px 0px var(--clr-brdr-100), -1px -1px 3px 0px var(--clr-brdr-100);
