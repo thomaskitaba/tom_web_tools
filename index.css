@@ -143,6 +143,9 @@ a:link {
 .google-digital-marketing-notes {
   background-color: rgba(5, 90, 138, 0.541);
 }
+.softwares-resourses {
+  background-color: rgba(255, 90, 90, 0.5);
+}
 .card:hover h3{
     box-shadow: 1px 1px 3px 0px var(--clr-brdr-100), -1px -1px 3px 0px var(--clr-brdr-100);
     background-color: rgb(88, 88, 76);
