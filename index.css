@@ -124,17 +124,21 @@ a:link {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    /* background-color: rgb(159, 84, 84); */
-
+    /* stretch cards so each card in a row matches the row height */
+    align-items: stretch;
 }
 .card {
     width: 300px;
-    height: 300px;
-    /* overflow-y: scroll; */
+    /* allow cards to grow/shrink while keeping a comfortable base size */
+    flex: 0 1 300px;
+    min-height: 200px; /* optional sensible minimum */
+    /* use flex column so content inside can space naturally (header, links, footer) */
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: auto if content is very long */
     border-radius: 2px;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     background-color: #303030;
     border: solid 1px var(--clr-brdr-100);
     box-shadow: 1px 1px 1px 0px var(--clr-brdr-100), -1px -1px 1px 0px var(--clr-brdr-100);
