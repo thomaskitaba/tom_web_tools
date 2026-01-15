@@ -145,6 +145,54 @@ a:link {
 .google-digital-marketing-notes {
   background-color: rgba(5, 90, 138, 0.541);
 }
+.ethiopia-digital-agriculture-reports.card {
+    background: #f1f8f4; /* soft green background */
+    border-radius: 12px;
+    padding: 22px 24px;
+    /* margin: 20px 0; */
+    box-shadow: 0 6px 18px rgba(34, 139, 34, 0.12);
+    
+    max-width: 720px;
+}
+
+/* Card title */
+.ethiopia-digital-agriculture-reports h3 {
+    margin: 0 0 16px 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1b5e20; /* deep forest green */
+}
+.ethiopia-digital-agriculture-reports h3:hover {
+    text-decoration: underline;
+    color: white;
+}
+/* Each report row */
+
+
+/* Links */
+.ethiopia-digital-agriculture-reports a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: #e8f5e9; /* light leaf green */
+    transition: all 0.25s ease;
+}
+
+/* Hover state */
+.ethiopia-digital-agriculture-reports a:hover {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+    transform: translateX(6px);
+}
+
+/* Document icon */
+.ethiopia-digital-agriculture-reports a::before {
+    content: "🌾";
+    margin-right: 8px;
+}
 .research-papers {
     background-color: rgba(194, 3, 44, 0.89);
 }
