@@ -11,8 +11,19 @@
 </head>
 
 <body>
+    <!-- Password Protection Modal -->
+    <div id="passwordModal" class="password-modal">
+        <div class="password-modal-content">
+            <h2>Access Password Required</h2>
+            <p>Enter password to access this website</p>
+            <input type="password" id="passwordInput" placeholder="Enter password" />
+            <button onclick="checkPassword()">Access</button>
+            <p id="errorMessage" style="color: red; display: none;">Incorrect password. Try again.</p>
+        </div>
+    </div>
+
     <!-- TODO: Nav bar -->
-    <div class="container">
+    <div class="container" id="mainContent" style="display: none;">
         <div class="all_navigation">
             <div class="burger">
                 <div class="breads"></div>
@@ -464,6 +475,46 @@
         <script src="reddit_api_ajax.js"></script>
         <script src="reddit_api_ajax_2.js"></script>
         <script src="burger.js"></script>
+        
+        <script>
+            // Password protection
+            const CORRECT_PASSWORD = "thomas"; // Change this to your desired password
+            
+            function checkPassword() {
+                const passwordInput = document.getElementById("passwordInput").value;
+                const errorMessage = document.getElementById("errorMessage");
+                
+                if (passwordInput === CORRECT_PASSWORD) {
+                    // Correct password - hide modal and show content
+                    document.getElementById("passwordModal").style.display = "none";
+                    document.getElementById("mainContent").style.display = "block";
+                    // Store in session so it doesn't ask again during this session
+                    sessionStorage.setItem("authToken", "true");
+                } else {
+                    // Wrong password - show error
+                    errorMessage.style.display = "block";
+                    document.getElementById("passwordInput").value = "";
+                    document.getElementById("passwordInput").focus();
+                }
+            }
+            
+            // Allow Enter key to submit password
+            document.addEventListener("keypress", function(event) {
+                if (event.key === "Enter" && document.getElementById("passwordModal").style.display !== "none") {
+                    checkPassword();
+                }
+            });
+            
+            // Check if already authenticated in this session
+            window.addEventListener("load", function() {
+                if (sessionStorage.getItem("authToken") === "true") {
+                    document.getElementById("passwordModal").style.display = "none";
+                    document.getElementById("mainContent").style.display = "block";
+                } else {
+                    document.getElementById("passwordInput").focus();
+                }
+            });
+        </script>
 </body>
 
 </html>
